@@ -2,94 +2,92 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Synthera Beta Sign-Up</title>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
-  <style>
-  <link rel="stylesheet" href="style.css">
-
-    body {
-      font-family: 'Inter', sans-serif;
-      background-color: #f6f9fc;
-      margin: 0;
-      padding: 0;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-    }
-    .container {
-      background: white;
-      padding: 2rem;
-      border-radius: 16px;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-      max-width: 500px;
-      width: 90%;
-      text-align: center;
-    }
-    h1 {
-      color: #222;
-      font-size: 1.8rem;
-      margin-bottom: 0.5rem;
-    }
-    p {
-      color: #555;
-      font-size: 1rem;
-      margin-bottom: 1.5rem;
-    }
-    input, select, textarea, button {
-      width: 100%;
-      padding: 0.75rem;
-      margin: 0.5rem 0;
-      border: 1px solid #ddd;
-      border-radius: 8px;
-      font-size: 1rem;
-    }
-    button {
-      background-color: #003366;
-      color: white;
-      border: none;
-      cursor: pointer;
-      transition: background 0.3s ease;
-    }
-    button:hover {
-      background-color: #002244;
-    }
-    .footer {
-      font-size: 0.8rem;
-      color: #999;
-      margin-top: 1rem;
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Synthera</title>
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="container">
-    <h1>Synthera Beta Access</h1>
-    <p>Request early access to our AI-powered drug discovery platform.</p>
-    
-    <form action="https://formspree.io/f/xrbpryvl" method="POST">
-      <input type="text" name="full_name" placeholder="Full Name" required />
-      <input type="email" name="email" placeholder="Email Address" required />
-      <input type="text" name="affiliation" placeholder="Affiliation (e.g. university, lab, company)" />
-      
-      <select name="background" required>
-        <option value="">Field of Expertise</option>
-        <option value="bioinformatics">Bioinformatics</option>
-        <option value="pharma">Pharmaceutical Research</option>
-        <option value="ai_ml">AI / ML Research</option>
-        <option value="clinical">Clinical or Medical</option>
-        <option value="student">Student / Learner</option>
-        <option value="other">Other</option>
-      </select>
+  <header>
+    <h1>Synthera</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#signup">Join Trials</a>
+      <a href="#blog">Blog</a>
+      <a href="#updates">Updates</a>
+      <a href="#docs">Docs</a>
+      <a href="#demo">Demo</a>
+      <a href="#partners">Partners</a>
+      <a href="#newsletter">Newsletter</a>
+    </nav>
+  </header>
 
-      <textarea name="intent" placeholder="How do you plan to use Synthera? (e.g. specific projects or interest areas)" rows="4" required></textarea>
-      <textarea name="feedback_expectation" placeholder="Any specific features you'd like or expectations from the beta?" rows="3"></textarea>
-      
-      <button type="submit">Submit Request</button>
-    </form>
+  <main>
+    <section id="hero">
+      <h2>Accelerating AI Drug Discovery</h2>
+      <p>Join our beta trials and revolutionize pharma research using cutting-edge generative models.</p>
+      <a href="#signup" class="cta">Join the Beta</a>
+    </section>
 
-    <div class="footer">© 2025 Synthera AI</div>
-  </div>
+    <section id="about">
+      <h2>About Synthera</h2>
+      <p>Synthera is an AI-driven drug discovery platform that integrates protein binding prediction, QSAR, ADME, toxicity analysis, and multimodal modeling. It is currently in beta testing at Harvard Medical School, Broad Institute, and MGH.</p>
+    </section>
+
+    <section id="signup">
+      <h2>Join Our Trials</h2>
+      <form action="https://formspree.io/f/xrbpryvl" method="POST">
+        <input type="text" name="name" placeholder="Full Name" required />
+        <input type="email" name="email" placeholder="Email Address" required />
+        <input type="text" name="institution" placeholder="Affiliation or Organization" />
+        <textarea name="interest" placeholder="Tell us why you're interested in Synthera" rows="4"></textarea>
+        <input type="text" name="expertise" placeholder="Area of Expertise (e.g., Genomics, ML, Oncology)" />
+        <button type="submit">Sign Up</button>
+      </form>
+    </section>
+
+    <section id="blog">
+      <h2>Blog</h2>
+      <ul>
+        <li><a href="#">Deep Dive: Our ADME Pipeline</a></li>
+        <li><a href="#">Using Transformers for Genomic Drug Predictions</a></li>
+      </ul>
+    </section>
+
+    <section id="updates">
+      <h2>Changelog</h2>
+      <ul>
+        <li><strong>April 2025:</strong> Public beta launched</li>
+        <li><strong>March 2025:</strong> Azure migration completed</li>
+        <li><strong>Feb 2025:</strong> Added docking + ADME modules</li>
+      </ul>
+    </section>
+
+    <section id="docs">
+      <h2>Documentation</h2>
+      <p><a href="/docs.html">Read the API guide and input formatting specs</a></p>
+    </section>
+
+    <section id="demo">
+      <h2>Demo</h2>
+      <p>Coming soon: walkthrough video and live testing sandbox.</p>
+    </section>
+
+    <section id="partners">
+      <h2>Partners</h2>
+      <p>Beta tested at Harvard Medical School, Broad Institute, and Massachusetts General Hospital.</p>
+    </section>
+
+    <section id="newsletter">
+      <h2>Get Synthera Updates</h2>
+      <form action="https://formspree.io/f/xrbpryvl" method="POST">
+        <input type="email" name="email" placeholder="Your email address" required />
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Synthera. Built with ❤️ on GitHub Pages.</p>
+  </footer>
 </body>
 </html>
